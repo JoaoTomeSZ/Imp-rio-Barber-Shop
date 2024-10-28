@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Império | Barber Shop</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./JavaScript/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="nav-bar" id="up">
+        <div class="logo" >
+            <a  href="./main.html"><img id="logo-img" src="./images/logo.png" alt="Império Barber Shop Logo" style="border-radius: 50%;"></a>
+            
+        </div>
+        <div class="imperio">
+            <h1>IMPÉRIO BARBER SHOP</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li onclick="scrollCorte()">Agende seu corte</li>
+                <li onclick="scrollContacts()">Contatos</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="timer">
+        <div class="timer-div">
+            <h2><h2>Horário de funcionamento</h2>
+            <p>Segunda à Sabado - 08:00 Até 19:00</p></h2> 
+        </div>
+         
+    </div>
+
+    <main class="about">
+        <div id="title">
+            <h1>Quem somos?</h1>
+        </div>
+        <div class="meet-us">
+            <img id="brothers" src="./images/teste.jpg" alt="Criadores da Imperio Barber Shop">
+            <p id="meet-us-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quos unde saepe vero earum, reiciendis debitis a dolorum ea, voluptatibus eaque quis illo dolore voluptas labore fuga autem officiis iusto!</p>
+        </div>        
+    </main>
+
+    <section class="options-container">
+        <div class="options-text" id="opcoes">
+            <h3>Opções para agendamento</h3>
+        </div>
+        <div class="options-img">
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">CORTE</h4>
+                    <p>R$ 25,00</p>
+                </div>
+                <div class="button-div">
+                    <button class="agend-button" id="1" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">CORTE, BARBA E SOBRANCELHA</h4>
+                    <p>R$ 35,00</p>
+                </div>
+                <div>
+                    <button class="agend-button" id="2" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">SELAGEM MASCULINA COM CORTE</h4>
+                    <p>R$ 70,00</p>
+                </div>
+                <div>
+                    <button class="agend-button" id="3" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">RELAXAMENTO</h4>
+                    <p>R$ 50,00</p>
+                </div>
+                <div>
+                    <button class="agend-button" id="4" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">LUZES</h4>
+                    <p>R$ 60,00</p>
+                </div>
+                <div>
+                    <button class="agend-button" id="5" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+            <div class="options-div">
+                <div class="options-title">
+                    <h4 class="titulo">PLATINADO</h4>
+                    <p>R$ 90,00</p>
+                </div>
+                <div>
+                    <button class="agend-button" id="6" onclick="mostrarMensagem(this.id)">Agendar</button>
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <button class="up"><i class="fa-solid fa-arrow-up" onclick="up()"></i></button>
+        </div>
+    </section>
+
+
+        
+    
+    <footer class="footer-container">
+            <div class="contacts-div">
+                <div class="contacts-title" id="contatos">
+                    <h4>Contatos</h4>
+                </div>
+                <div class="contacts">
+                    <a href="https://www.instagram.com/imperiobarbershop.dd?igshid=OGQ5ZDc2ODk2ZA%3D%3D" target="_blank">Instagram <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/+5571983278899" target="_blank">Whatsapp <i class="fa-brands fa-whatsapp" ></i></a>
+                    <a href="tel:+5571983278899" target="_blank">Telefone <i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="pix-div">
+                <div class="contacts-title">
+                    <h4>Nosso PIX</h4>
+                </div>
+                <div class="pix">
+                    <a onclick="copiarParaClipboard()" id="copy-pix">Chave PIX <i class="fa fa-copy"></i></a>
+                </div>
+            </div>
+        
+    </footer>
+</body>
+</html>
