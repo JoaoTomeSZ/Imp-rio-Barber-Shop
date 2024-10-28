@@ -25,6 +25,7 @@ nav{
 #logo-img{
     border: 2px solid black;
     width: 130px;
+    border-radius: 50%;
 }
 
 .logo{
@@ -252,6 +253,7 @@ a{
     #logo-img{
         border: 2px solid black;
         width: 60px;
+        
     }
     
     .logo img{
@@ -260,6 +262,7 @@ a{
     justify-content: center;
     text-align: center;
     margin-top: 10px;
+    
     }
     .logo{
         justify-content: center;
