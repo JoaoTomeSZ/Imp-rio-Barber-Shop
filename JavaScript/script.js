@@ -1,7 +1,7 @@
-const phone = "71983278899"
+const phone = "71999999999"
 
 function copiarParaClipboard() {
-    const textoParaCopiar = "71983278899";
+    const textoParaCopiar = "71999999999";
     navigator.clipboard.writeText(textoParaCopiar)
         .then(() => {
             alert("Texto copiado para a área de transferência!");
